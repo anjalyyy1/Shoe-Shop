@@ -1,0 +1,32 @@
+:root {
+  --mainYellow: #fce228;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainText: #646464;
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainText);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Courier New', Courier, monospace !important;
+  letter-spacing: 0.25rem !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  color: var(--mainBlack);
+}
+
+.navbar-test {
+  background-color: var(--mainYellow);
+}
