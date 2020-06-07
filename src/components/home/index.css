@@ -1,0 +1,13 @@
+.banner-heading {
+  color: var(--mainWhite);
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.about-page-btn {
+  background-color: var(--primary);
+  margin: 20px;
+}

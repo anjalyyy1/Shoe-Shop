@@ -1,13 +1,29 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Home from '../components/home';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title='Home' />
-  </Layout>
-);
+export const query = graphql`
+  {
+    backgroundImage: file(relativePath: { eq: "bgimage.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`;
+
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <SEO title='Home' />
+      <Home data={data} />
+    </Layout>
+  );
+};
 
 export default IndexPage;
