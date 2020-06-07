@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.svg';
 import { map } from 'lodash';
 import { FaOpencart } from 'react-icons/fa';
 import './navbar.css';
@@ -20,10 +20,7 @@ const NavBar = props => {
   const [navBarOpen, setNavBar] = useState(false);
 
   return (
-    <nav
-      className='navbar-test navbar navbar-expand-sm navbar-light'
-      // style={{ backgroundColor: '#fce228' }}
-    >
+    <nav className='navbar navbar-expand-sm'>
       <Link to='/' className='navbar-brand'>
         <div style={{ width: '50px' }}>
           <img src={logo} alt='Shoe Shop' className='img-fluid' />
@@ -53,7 +50,7 @@ const NavBar = props => {
           })}
 
           <li className='nav-item ml-sm-3 .cart-icon'>
-            <FaOpencart />
+            <FaOpencart style={{ fontSize: '30px' }} />
           </li>
         </ul>
       </div>

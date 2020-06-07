@@ -1,32 +1,42 @@
 :root {
-  --mainYellow: #fce228;
+  --primary: #d19e0e;
   --mainWhite: #fff;
-  --mainBlack: #000;
+  --mainText: #636363;
   --mainText: #646464;
 }
 
 body {
+  box-sizing: border-box;
   background: var(--mainWhite);
   color: var(--mainText);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Courier New', Courier, monospace !important;
-  letter-spacing: 0.25rem !important;
-}
-
 .cart-icon {
   cursor: pointer;
   margin-left: 10px;
-  color: var(--mainBlack);
+  color: var(--mainText);
+  font-weight: bold;
 }
 
-.navbar-test {
-  background-color: var(--mainYellow);
+.wrapper {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: var(--mainText);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--mainWhite);
+  padding: 10px 40px;
 }
