@@ -1,6 +1,6 @@
 .banner-heading {
   color: var(--mainWhite);
-  font-size: 5vw;
+  font-size: 70px;
   font-weight: bold;
   font-family: Roboto, sans-serif;
   text-transform: uppercase;
@@ -8,6 +8,69 @@
 }
 
 .about-page-btn {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   margin: 20px;
+}
+
+.menu-section-wrapper {
+  background-color: #2f14020f;
+  padding: 40px;
+}
+
+.filter-options {
+  width: 36%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.active-filter {
+  background-color: var(--yellow);
+  color: var(--mainWhite);
+  font-weight: bold;
+}
+
+.filter-button {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.list-group-item {
+  margin-bottom: 20px;
+}
+
+.special-product-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+/* form styling */
+
+.menu-price {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  font-weight: bold;
+}
+
+.image-name {
+  display: inline-flex;
+}
+
+.menu-title {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: underline;
+}
+
+.card {
+  box-shadow: -8px 11px 5px -7px #00000054;
 }

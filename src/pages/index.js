@@ -14,6 +14,25 @@ export const query = graphql`
         }
       }
     }
+
+    menu: allContentfulMenuItem {
+      edges {
+        node {
+          id
+          title
+          price
+          description {
+            description
+          }
+          category
+          image {
+            fixed(width: 50, height: 50) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+    }
   }
 `;
 

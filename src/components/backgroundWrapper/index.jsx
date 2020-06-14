@@ -3,16 +3,19 @@ import BackgroundImage from 'gatsby-background-image';
 import './index.css';
 
 const BackgroundWrapper = props => {
-  let { backgroundImage, styleClass, title, children } = props;
+  let { backgroundImage, styleClass, children } = props;
 
-  console.log(backgroundImage, '--');
   return (
     <>
-      <BackgroundImage className='jumbotron' fluid={backgroundImage}>
+      <BackgroundImage className={styleClass} fluid={backgroundImage}>
         {children}
       </BackgroundImage>
     </>
   );
+};
+
+BackgroundImage.defaultProps = {
+  styleClass: 'jumbotron'
 };
 
 export default BackgroundWrapper;

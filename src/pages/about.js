@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { get } from 'lodash';
 
 import BackgroundWrapper from '../components/backgroundWrapper';
-import Info from '../components/info';
-import Footer from '../components/footer';
+import Offers from '../components/offer';
 import Layout from '../components/layout';
 
 export const query = graphql`
@@ -17,20 +16,36 @@ export const query = graphql`
         }
       }
     }
+
+    offers: allContentfulOffers {
+      edges {
+        node {
+          id
+          title
+          description
+          image {
+            fixed {
+              src
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
 const About = props => {
   let { data } = props;
+  console.log(data);
   return (
     <Layout>
       <BackgroundWrapper
+        styleClass='page-background'
         backgroundImage={get(data, `backgroundImage.childImageSharp.fluid`)}
       >
         <h2 className='banner-heading'>About us</h2>
       </BackgroundWrapper>
-      <Info />
-      <Footer />
+      <Offers offers={get(data, `offers`)} />
     </Layout>
   );
 };

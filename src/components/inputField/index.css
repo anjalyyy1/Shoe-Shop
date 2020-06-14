@@ -17,6 +17,7 @@
   position: absolute;
   margin-top: 5px;
   left: 0;
+  color: red;
 }
 
 .input-field {
@@ -33,8 +34,6 @@
 }
 
 .textarea-field {
-  padding: 7px 8px;
-  height: 80px;
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -42,13 +41,14 @@
   border-radius: 4px;
   color: var(--mainText);
   font-family: Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   border: 1px solid var(--mainText);
+  padding: 10px;
 }
 
 .form-group {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
 }
