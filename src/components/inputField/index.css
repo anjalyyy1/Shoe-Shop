@@ -34,8 +34,6 @@
 }
 
 .textarea-field {
-  padding: 7px 8px;
-  height: 80px;
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -43,8 +41,9 @@
   border-radius: 4px;
   color: var(--mainText);
   font-family: Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   border: 1px solid var(--mainText);
+  padding: 10px;
 }
 
 .form-group {

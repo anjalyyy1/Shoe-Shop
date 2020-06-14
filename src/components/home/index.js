@@ -2,8 +2,6 @@ import React from 'react';
 import { get } from 'lodash';
 
 import BackgroundWrapper from '../backgroundWrapper';
-import Offer from '../offer';
-import Footer from '../footer';
 import './index.css';
 import Menu from './components/menu';
 import SpecialProducts from './components/specialProducts';
@@ -16,7 +14,7 @@ const Home = props => {
         styleClass='jumbotron'
         backgroundImage={get(data, `backgroundImage.childImageSharp.fluid`)}
       >
-        <h2 className='banner-heading'>Let's grab a cup of coffee...</h2>
+        <h2 className='banner-heading'>One of a Kind Coffee house</h2>
       </BackgroundWrapper>
       <Menu menu={get(data, `menu`)} />
       <SpecialProducts />

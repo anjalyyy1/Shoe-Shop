@@ -9,7 +9,7 @@ const Title = props => {
       <h3 className='section-heading text-center display-4 font-weight-bold my-5'>
         {titleText}
       </h3>
-      <div class='line'></div>
+      <div className='line'></div>
     </>
   );
 };

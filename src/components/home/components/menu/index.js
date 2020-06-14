@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Title from '../../../title';
 import Img from 'gatsby-image';
-import { map, get, filter, each } from 'lodash';
+import { map, get, filter } from 'lodash';
 
 const filterOptions = [
   {
