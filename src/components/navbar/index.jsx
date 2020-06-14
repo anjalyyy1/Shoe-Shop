@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import logo from '../../images/logo.svg';
 import { map } from 'lodash';
-import { FaOpencart } from 'react-icons/fa';
 import './navbar.css';
 
 const links = [
@@ -13,6 +12,10 @@ const links = [
   {
     path: `/about`,
     text: 'About'
+  },
+  {
+    path: `/contact`,
+    text: 'Contact'
   }
 ];
 
@@ -48,10 +51,6 @@ const NavBar = props => {
               </li>
             );
           })}
-
-          <li className='nav-item ml-sm-3 .cart-icon'>
-            <FaOpencart style={{ fontSize: '30px' }} />
-          </li>
         </ul>
       </div>
     </nav>

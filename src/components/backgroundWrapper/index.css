@@ -1,5 +1,14 @@
 .jumbotron {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
+  margin-bottom: 0px;
+}
+
+.page-background {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

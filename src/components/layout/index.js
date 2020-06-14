@@ -5,12 +5,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components
 import Navbar from '../../components/navbar';
 import './index.css';
+import Footer from '../footer';
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
       <div>{children}</div>
+      <Footer />
     </>
   );
 };

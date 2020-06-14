@@ -1,0 +1,10 @@
+/* form styling */
+
+.helper-text {
+  margin: 0 20px;
+  display: inline-block;
+  margin-left: 40px;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
