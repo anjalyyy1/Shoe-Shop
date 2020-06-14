@@ -14,8 +14,4 @@ const BackgroundWrapper = props => {
   );
 };
 
-BackgroundImage.defaultProps = {
-  styleClass: 'jumbotron'
-};
-
 export default BackgroundWrapper;
